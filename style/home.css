@@ -1,0 +1,412 @@
+.bg-photo img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    margin-top: 0%;
+    z-index: -10;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 4px;
+    width: 40px;
+    margin: 0 2px;
+    background-color:var(--clr-mainYtp);
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color:var(--clr-light);
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img{
+    width: 30%;
+    margin-top: 5%;
+}
+
+.book-now {
+    margin-top: 17%;
+    display: flex;
+    align-items: center;
+}
+
+#pBookNow {
+    border-right: solid var(--clr-light) 2px;
+    padding: 0% 5%;
+    line-height: -1.6;
+}
+
+#pBookNow span{
+    display: block;
+    margin-top: -5%;
+    font-size: 50%;
+}
+
+.book-card {
+    min-width: 920px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2%;
+
+    background-color: rgb(219, 189, 92,0.9);
+}
+
+.book-card p {
+    color: var(--clr-light);
+    font-size: 2rem;
+    
+}
+
+.check-in-out {
+    display: flex;
+    text-align: center;
+}
+.check-in{
+    margin-right: 15%;
+}
+.check-in-out input{
+    cursor: pointer;
+}
+
+
+.ck {
+    color: var(--clr-light);
+    
+    font-size: 1rem;
+}
+
+
+.book-card button{
+    background-color: var(--clr-dark);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: var(--clr-light);
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.book-card button:active{
+    background-color: var(--clr-semidark);
+}
+
+.book-card button span{
+    color: var(--clr-mainY);
+    font-size: 0.7rem;
+}
+
+.foot-book {
+    font-size: 2vw;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.foot-book p{
+    color: var(--clr-light);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.foot-book p span{
+    display: block;
+    font-size: 50%;
+    opacity: 0.7;
+}
+
+.offers {
+    margin-top: 2%;
+}
+
+.offer-items{
+    position: relative;
+    margin-left: -3%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.offer-items li p{
+    position: absolute;
+    color: var(--clr-light);
+    font-size: 1vw;
+    margin-top: -3%;
+    margin-left: 1.5%;
+    letter-spacing: 2px;
+}
+
+.offer-items li button {
+    margin-top: 10%;
+    margin-left: -13.2%;
+
+    font-family: var(--font-sans-serif);
+    color: var(--clr-light);
+    background-color: transparent;
+    border: solid 1px;
+}
+
+.offer-items li a{
+    color: white;
+}
+
+#offers-s {
+    width: 150px;
+    filter: grayscale(10%) brightness(20%);
+}
+
+
+#offers-s:active{
+    filter: grayscale(50%) brightness(50%);
+}
+
+.offer-items li img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer-items li img:hover{cursor: pointer;}
+.offer-items li img:active{filter: brightness(70%);}
+
+.offer-room.active  ~ .dropdown-content{display: block;}
+.offer-bar.active  ~ .dropdown-content{display: block;}
+.offer-meet.active  ~ .dropdown-content{display: block;}
+
+
+.welcome{
+    position:static;
+    margin-top: 2%;
+}
+
+.welcome-title h4 {
+    text-align: center;
+    color: var(--clr-mainY);
+    font-family: var(--font-serif);
+    font-weight: 600;
+}
+.welcome-title h3{
+    color: var(--clr-dark);
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.welcome-title p{
+    color: var(--clr-dark);
+    margin-top: 2%;
+    font-size: 0.9rem;
+    text-align:justify;
+    text-indent: 5%;
+    text-align-last: center;
+    line-height: 2;
+}
+
+#wt2 p{
+    text-align: justify;
+}
+
+.tb-select{
+    position: relative;
+    margin-top: -3%;
+    width: 290px;
+    height: 410px;
+    /* background-color: var(--clr-dark); */
+    /* background-image: url(../img/bay-origin.jpg);
+    background-size: cover; */
+}
+.tb-filter{
+    position: absolute;
+    width: 290px;
+    height: 410px;
+    background-image: url(../img/bay-origin.jpg);
+    background-size: cover;
+    filter: saturate(10%) brightness(50%);
+    z-index: -10;
+}
+
+.tb-text{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#tbtop{
+    font-size: 50%;
+    color: var(--clr-light);
+    background-color: var(--clr-semidark);
+    width: 60%;
+    padding-top: 2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.tb-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tb-title h4{
+    text-align: center;
+    position: absolute;
+    margin-top: 90%;
+    color: var(--clr-light);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.tb-title h4 span{
+    font-size: 1rem;
+    letter-spacing: 0px;
+    color: var(--clr-mainY);
+}
+
+.tb-title p{
+    text-align: center;
+    position: absolute;
+    margin-top: 180%;
+    color: var(--clr-light);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.referral-container{
+    position: absolute;
+    margin-top: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+#ref-copy{background-color: var(--clr-dark);}
+#ref-copy:hover ~ #myTooltip{
+    display: block;
+}
+
+.tb-title button{
+    position: absolute;
+    margin-top: 240%;
+    color: var(--clr-light);
+    background-color: var(--clr-mainYtp);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.tb-title button:active{background-color: var(--clr-mainY);}
+
+#myTooltip{
+    position: absolute;
+    background-color: var(--clr-semilight);
+    margin-top: 13%;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    font-size: 0.7rem;
+    display: none;
+}
+
+#referral{
+    text-align: center;
+    width: 55%;
+    
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.currency-container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#currency{
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-serif);
+    color: var(--clr-light);
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.menue a{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+.menue p{
+    position: absolute;
+    background-color: var(--clr-mainYtp);
+    width: 20%;
+    margin-top: -4.5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tb-container{
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tb-col{
+    flex: 25%;
+}
+
+.tb-col img{
+    width: 290px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+@media(max-width: 1024px){
+    .book-card, #foot-book-web{
+        display: none;
+    }
+
+}
+
+@media(max-width:375px) {
+    
+}

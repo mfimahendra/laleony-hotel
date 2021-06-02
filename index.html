@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <script defer src="script/script.js"></script>
+    <title>Laleony</title>
+</head>
+<body onscroll="scrollNav()" onload="showSlides()">
+    <div class="navbar" id="navbar">
+        <div class="wrapper">
+            <nav>
+                <img src="img/logo.svg" alt="" style="width:4%; margin-right: -12%;">
+                <div class="logo">
+                    <h3>Läleony</h3><br>
+                    <p style="font-size: 0.5em; margin-top: -40%;">Hotel & Resort</p>
+                </div>
+                <ul id="nav-items" class="nav-items">
+                    <li><a href="#">HOTEL</a></li>
+                    <li><a href="#">OFFERS</a></li>
+                    <li>
+                        <a href="#">ROOMS</a>
+                        <div id="dropdown-content" class="dropdown-content rooms">
+                            <a id="dselc" href="#">Deluxe Room</a>
+                            <a id="dselc" href="#">Deluxe Sea View</a>
+                            <a id="dselc" href="#">Executive Suite</a>
+                            <a id="dselc" href="#">Grand Suite</a>
+                            <a id="dselc" href="#">Grand Deluxe</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">SERVICES</a>
+                        <div id="dropdown-content" class="dropdown-content services">
+                            <a id="dselc" href="#">Recreation Facilities</a>
+                            <a id="dselc" href="#">Meetings and Events</a>
+                        </div>
+                    </li>
+                    <li><a href="#">GALLERY</a></li>                    
+                    <li>
+                        <a href="#">BARS</a>
+                        <div id="dropdown-content" class="dropdown-content bars">
+                            <a id="dselc" href="#">WatuAdem Bars</a>
+                            <a id="dselc" href="#">IndahSari Club</a>
+                            <a id="dselc" href="#">Ijinin</a>
+                        </div>
+                    </li>
+                    <li><a href="#">MAP</a></li>
+                </ul>
+                <div class="menuToggle" onclick="toggleMenu()"></div>
+                <div class="mini-dropdown">
+                    <a href="#">HOTEL</a>
+                    <a href="#">OFFERS</a>
+                    <a href="#">ROOMS</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">GALLERY</a>
+                    <a href="#">BARS</a>
+                    <a href="#">MAP</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+
+
+    <section class="carousel">
+        <div class="bg-photo">
+            <div class="bg-slide"><img src="img/main-building.png" alt=""></div>
+            <div class="bg-slide"><img src="img/bar.png" alt=""></div>
+            <div class="bg-slide"><img src="img/deluxe-room.jpg" alt=""></div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    </section>
+
+    <div class="logo-utama">
+        <div class="wrapper">
+            <div class="header-logo">
+                <img src="img/logo-head.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="book-now">
+        <div class="wrapper">
+            <div class="book-card">
+                <p id="pBookNow">Book Now <br/><span>Läleony Hotel & Resort</span></p>
+                <div class="check-in-out">
+                    <div class="check-in">
+                        <label class="ck" for="check-in">CHECK-IN</label><br>
+                        <input type="date" name="check-in" id="check-in">
+                    </div>
+                    <div class="check-out">
+                        <label class="ck" for="check-in">CHECK-OUT</label><br>
+                        <input type="date" name="check-in" id="check-in">
+                    </div>
+                </div>
+                <button id="book">CHECK AVAILABILITY <br><Span>BEST PRICE GUARANTEED!</Span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dots" style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="foot-book">
+        <p>
+            BEST PRICE GUARANTEED <br>
+            <span>JUST BOOK IN OUR WEBSITE</span>
+        </p>
+    </div>
+    
+    <div class="offers">
+        <div class="wrapper">
+            <ul class="offer-items">
+                <li>
+                    <img src="img/deluxe-room.jpg" alt="" class="offer-room" onclick="toggleMenuActive('room')">
+                    <p>SPECIAL ROOM</p>
+                    <div id="dropdown-content" class="dropdown-content rooms">
+                        <a id="dselc" href="#">Deluxe Room</a>
+                        <a id="dselc" href="#">Deluxe Sea View</a>
+                        <a id="dselc" href="#">Executive Suite</a>
+                        <a id="dselc" href="#">Grand Suite</a>
+                        <a id="dselc" href="#">Grand Deluxe</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/bar.png" alt="" class="offer-bar" onclick="toggleMenuActive('bars')">
+                    <p>BARS & RESTAURANT</p>
+                    <div id="dropdown-content" class="dropdown-content bars">
+                        <a id="dselc" href="#">WatuAdem Bars</a>
+                        <a id="dselc" href="#">IndahSari Club</a>
+                        <a id="dselc" href="#">Ijinin</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/meeting-room.jpg" alt="" class="offer-meet" onclick="toggleMenuActive('meet')">
+                    <p>MEETINGS ROOM</p>
+                    <div id="dropdown-content" class="dropdown-content bars">
+                        <a id="dselc" href="#">Conference</a>
+                        <a id="dselc" href="#">Giant Meetings</a>
+                        <a id="dselc" href="#">Private Meetings</a>
+                    </div>
+                </li>
+                <li style="cursor: pointer;">
+                    <img id="offers-s" src="img/main-building.png" alt="">
+                    <p id="offers-cmore" style="position: absolut; bottom: 40%; text-align: center;"><a style="color: var(--clr-mainY); text-decoration: none;" href="#">&#10095 <br> CHECK MORE</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <div class="wrapper">
+            <div class="welcome-title">
+                <h4>Welcome to Läleony Hotels</h4>
+                <h3>Selamat datang di Läleony Hotel</h3>
+                <div class="wrapper1">
+                    <p>
+                        Läleony Hotel and Resort is located on the white sandy beach of Alissa, with beautiful sunsets. Laleony Hotel has direct access to the famous Alissa Beach, and only a 5-10 minute walk to the shopping mall and entertainment area. It is only 3 miles from the Asal Terbang International Airport and 6 miles from the city of Pochinki.
+                    </p>
+                    <p>
+                        Läleony Hotel and Resort offers two distinct design styles in its accommodations with its refreshing hospitality concept-Greenwood Wing and Seaside Wing, with a total of 400 guest rooms, family rooms and suites. Greenwood Wing has a traditional guest room style. Each room has a private balcony. It is specially designed for guests looking for the natural atmosphere of the green forest. In addition, the modern style of Seaside Wing creates a modern atmosphere, with various views of the swimming pool, sea or garden from the room.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper1">
+                <div class="tb-container">
+                    <div class="tb-col">
+                        <div class="tb-select">
+                            <div class="tb-filter"></div>
+                            <div class="tb-text">
+                                <p id="tbtop">SPECIAL OFFER</p>
+                            </div>
+                            <div class="tb-title">
+                                <h4>EARLY BOOKING <br> 50% OFF <br><br>
+                                    <span>FROM ONLY</span><br>
+                                    <div class="currency-container" onload="qian()">
+                                        <div id="currency"></div>
+                                    </div>
+                                </h4>
+                                <p>Use our referral code</p>
+                                <div class="referral-container">
+                                    <input id="referral" type="text" value="201953082034" readonly>
+                                    <input id="ref-copy" type="button" value="&#128203" onclick="copas()">
+                                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                </div>
+                                <button id="book">BOOK NOW !</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tb-col">
+                        <div class="menue">
+                            <img src="img/wedding.jpg" alt="">
+                            <p><a href="#">Wedding Package</a></p>
+                        </div>
+                        <div class="menue">
+                            <img src="img/bay-origin.jpg" alt="">
+                            <p><a href="#">Honeymoon Package</a></p>
+                        </div>
+                    </div>
+                    <div class="tb-col">
+                        <div class="menue">
+                            <img src="img/pool.png" alt="">
+                            <p><a href="#">Pool & Bars Package</a></p>
+                        </div>
+                        <div class="menue">
+                            <img src="img/beach.png" alt="">
+                            <p><a href="#">Holiday Package</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-title" id="wt2">
+                    <div class="wrapper1">
+                        <p>
+                            "Looking for a relaxing hotel close to the beach or close to natural forest views? Only at Laleony Hotel and Resort you can easily book a room."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <hr>
+            <div class="wrapper1">
+                <div class="footer1-items">
+                    <div class="social-media-container">
+                        <h5>CONNECT WITH US</h5>
+                        <p>We like to share new offers and exclusive promotions</p>
+                        <ul class="scm-container">
+                            <a class="sm" href="https://github.com/mfimahendra"><img  src="img/sm-github.svg" alt=""></a>
+                            <a class="sm" href="https://u.wechat.com/IDn1hZBdaw3QjC2LHyPR0eg"><img  src="img/sm-wechat.svg" alt=""></a>
+                            <a class="sm" href="https://twitter.com/mfimahendra"><img  src="img/sm-twitter.svg" alt=""></a>
+                            <a class="sm" href="https://www.instagram.com/mfimahendra_/"><img  src="img/sm-instagram.svg" alt=""></a>
+                        </ul>
+                    </div>
+                    <div class="news-container">
+                        <h3>Läleony</h3>
+                        <p style="font-size: 0.5em; margin-top: -3%;">Premium+</p>
+                        <p>Get notified about the Promotions by Email</p>
+                        <form id="email-form" action="#">
+                            <input id="type-email" type="email" placeholder="Input Your Email">
+                            <input id="submit-email" type="submit" value="SUBSCRIBE!">
+                        </form>
+                    </div>
+                </div>
+            </div><br><hr>
+            <div class="footer-container">
+                <div class="ft-title">
+                    <div class="ft-logo">
+                        <img src="img/logo-head.svg" alt="">
+                    </div>
+                </div>
+                <div class="ft-info">
+                    <h4>Läleony Hotel and Resort</h4>
+                    <p>
+                        Alissa Beach No 22, Pochinki - Indonesia <br><br>
+                        Phone : +62 123 4567 8910  <br>
+                        E-mail : mfimahendra@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="wrapper">
+                <div class="flexer">
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2021 Läleony Hotel & Resort. All rights reserved, Pictures By Pexels.com . <br> Designed By Mukhammad Fakhrizal Ihza - CST - 201953082034                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
