@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/home.css">
     <link rel="shortcut icon" href="img/logo.svg">
     <script defer src="script/script.js"></script>
+    <script defer src="script/home.js"></script>
     <title>Läleony Hotel & Resort</title>
 </head>
 <body onscroll="scrollNav()" onload="showSlides()">
@@ -23,57 +24,58 @@
                     <p style="font-size: 0.5em; margin-top: -40%;">Hotel & Resort</p>
                 </div>
                 <ul id="nav-items" class="nav-items">
-                    <li><a href="#">HOTEL</a></li>
-                    <li><a href="#">OFFERS</a></li>
+                    <li><a href="index.html">HOTEL</a></li>
+                    <li><a href="./pages/o-offers.html">OFFERS</a></li>
                     <li>
-                        <a href="#">ROOMS</a>
+                        <a href="pages/r-room.html">ROOMS</a>
                         <div id="dropdown-content" class="dropdown-content rooms">
-                            <a id="dselc" href="#">Deluxe Room</a>
-                            <a id="dselc" href="#">Deluxe Sea View</a>
-                            <a id="dselc" href="#">Executive Suite</a>
-                            <a id="dselc" href="#">Grand Suite</a>
-                            <a id="dselc" href="#">Grand Deluxe</a>
+                            <a id="dselc" href="./r-deluxe-room.html">Deluxe Room</a>
+                            <a id="dselc" href="./r-deluxe-seaview.html">Deluxe Sea View</a>
+                            <a id="dselc" href="./r-executive-suite.html">Executive Suite</a>
+                            <a id="dselc" href="./r-grand-suite.html">Grand Suite</a>
+                            <a id="dselc" href="./r-grand-deluxe.html">Grand Deluxe</a>
+                            <a id="dselc" href="./r-grand-deluxe-seaview.html">Grand Deluxe Sea View</a>
                         </div>
                     </li>
                     <li>
-                        <a href="#">SERVICES</a>
+                        <a href="./pages/s-service.html">SERVICES</a>
                         <div id="dropdown-content" class="dropdown-content services">
-                            <a id="dselc" href="#">Recreation Facilities</a>
-                            <a id="dselc" href="#">Meetings and Events</a>
+                            <a id="dselc" href="./pages/s-recreation.html">Recreation Facilities</a>
+                            <a id="dselc" href="./pages/meeting-table.html">Meetings and Events</a>
                         </div>
                     </li>
-                    <li><a href="#">GALLERY</a></li>                    
+                    <li><a href="./pages/g-gallery.html">GALLERY</a></li>                    
                     <li>
-                        <a href="#">BARS</a>
+                        <a href="./pages/b-bars.html">BARS</a>
                         <div id="dropdown-content" class="dropdown-content bars">
                             <a id="dselc" href="#">WatuAdem Bars</a>
                             <a id="dselc" href="#">IndahSari Club</a>
-                            <a id="dselc" href="#">Ijinin</a>
+                            <a id="dselc" href="#">BulanMadu Restaurant</a>
+                            <a id="dselc" href="#">SambelanCok Restaurant</a>
                         </div>
                     </li>
-                    <li><a href="#">MAP</a></li>
+                    <li><a href="./pages/m-maps.html">MAP</a></li>
                 </ul>
                 <div class="menuToggle" onclick="toggleMenu()"></div>
                 <div class="mini-dropdown">
-                    <a href="#">HOTEL</a>
-                    <a href="#">OFFERS</a>
-                    <a href="#">ROOMS</a>
-                    <a href="#">SERVICES</a>
-                    <a href="#">GALLERY</a>
-                    <a href="#">BARS</a>
-                    <a href="#">MAP</a>
+                    <a href="./index.html">HOTEL</a>
+                    <a href="./pages/o-offers.html">OFFERS</a>
+                    <a href="./pages/r-room.html">ROOMS</a>
+                    <a href="./pages/s-service.html">SERVICES</a>
+                    <a href="./pages/g-gallery.html">GALLERY</a>
+                    <a href="./pages/b-bars.html">BARS</a>
+                    <a href="./pages/m-maps.html">MAP</a>
                 </div>
             </nav>
         </div>
     </div>
     
-
-
     <section class="carousel">
         <div class="bg-photo">
             <div class="bg-slide"><img src="img/main-building.png" alt=""></div>
+            <div class="bg-slide"><img src="img/reception.jpg" alt="" style="filter: brightness(80%);"></div>
             <div class="bg-slide"><img src="img/bar.png" alt=""></div>
-            <div class="bg-slide"><img src="img/deluxe-room.jpg" alt=""></div>
+            <div class="bg-slide"><img src="img/grand-deluxe-seav.jpg" alt=""></div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -103,7 +105,7 @@
                         <input type="date" name="check-in" id="check-in">
                     </div>
                 </div>
-                <button id="book">CHECK AVAILABILITY <br><Span>BEST PRICE GUARANTEED!</Span></button>
+                <button id="book" onclick="window.location.href='./pages/b-booking.html'">CHECK AVAILABILITY <br><Span>BEST PRICE GUARANTEED!</Span></button>
             </div>
         </div>
     </div>
@@ -128,11 +130,12 @@
                     <img src="img/deluxe-room.jpg" alt="" class="offer-room" onclick="toggleMenuActive('room')">
                     <p>SPECIAL ROOM</p>
                     <div id="dropdown-content" class="dropdown-content rooms">
-                        <a id="dselc" href="#">Deluxe Room</a>
-                        <a id="dselc" href="#">Deluxe Sea View</a>
-                        <a id="dselc" href="#">Executive Suite</a>
-                        <a id="dselc" href="#">Grand Suite</a>
-                        <a id="dselc" href="#">Grand Deluxe</a>
+                        <a id="dselc" href="./r-deluxe-room.html">Deluxe Room</a>
+                        <a id="dselc" href="./r-deluxe-seaview.html">Deluxe Sea View</a>
+                        <a id="dselc" href="./r-executive-suite.html">Executive Suite</a>
+                        <a id="dselc" href="./r-grand-suite.html">Grand Suite</a>
+                        <a id="dselc" href="./r-grand-deluxe.html">Grand Deluxe</a>
+                        <a id="dselc" href="./r-grand-deluxe-seaview.html">Grand Deluxe Sea View</a>
                     </div>
                 </li>
                 <li>
@@ -145,12 +148,12 @@
                     </div>
                 </li>
                 <li>
-                    <img src="img/meeting-room.jpg" alt="" class="offer-meet" onclick="toggleMenuActive('meet')">
+                    <img src="img/meeting-room5.jpg" alt="" class="offer-meet" onclick="toggleMenuActive('meet')">
                     <p>MEETINGS ROOM</p>
                     <div id="dropdown-content" class="dropdown-content bars">
+                        <a id="dselc" href="#">Meetings</a>
                         <a id="dselc" href="#">Conference</a>
-                        <a id="dselc" href="#">Giant Meetings</a>
-                        <a id="dselc" href="#">Private Meetings</a>
+                        <a id="dselc" href="#">Ballroom</a>
                     </div>
                 </li>
                 <li style="cursor: pointer;">
@@ -197,28 +200,28 @@
                                     <input id="ref-copy" type="button" value="&#128203" onclick="copas()">
                                     <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
                                 </div>
-                                <button id="book">BOOK NOW !</button>
+                                <button id="book" onclick="bookOffers('roomHalf')">BOOK NOW !</button>
                             </div>
                         </div>
                     </div>
                     <div class="tb-col">
                         <div class="menue">
                             <img src="img/wedding.jpg" alt="">
-                            <p><a href="#">Wedding Package</a></p>
+                            <p><a href="./pages/o-offers.html">Wedding Package</a></p>
                         </div>
                         <div class="menue">
                             <img src="img/bay-origin.jpg" alt="">
-                            <p><a href="#">Honeymoon Package</a></p>
+                            <p><a href="./pages/o-offers.html">Honeymoon Package</a></p>
                         </div>
                     </div>
                     <div class="tb-col">
                         <div class="menue">
                             <img src="img/pool.png" alt="">
-                            <p><a href="#">Pool & Bars Package</a></p>
+                            <p><a href="./pages/o-offers.html">Pool & Bars Package</a></p>
                         </div>
                         <div class="menue">
                             <img src="img/beach.png" alt="">
-                            <p><a href="#">Holiday Package</a></p>
+                            <p><a href="./pages/o-offers.html">Holiday Package</a></p>
                         </div>
                     </div>
                 </div>
