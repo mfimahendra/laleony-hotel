@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/room.css">
+    <link rel="shortcut icon" href="../img/logo.svg">
+    <script defer src="../script/script.js"></script>
+    <title>Läleony Rooms</title>
+</head>
+<body onscroll="scrollNav()">
+    <div class="navbar" id="navbar">
+        <div class="wrapper">
+            <nav>
+                <img src="../img/logo.svg" alt="" style="width:4%; margin-right: -12%;">
+                <div class="logo">
+                    <h3>Läleony</h3><br>
+                    <p style="font-size: 0.5em; margin-top: -40%;">Hotel & Resort</p>
+                </div>
+                <ul id="nav-items" class="nav-items">
+                    <li><a href="../index.html">HOTEL</a></li>
+                    <li><a href="./o-offers.html">OFFERS</a></li>
+                    <li>
+                        <a href="./r-room.html">ROOMS</a>
+                        <div id="dropdown-content" class="dropdown-content">
+                            <a id="dselc" href="./rooms/r-deluxe-room.html">Deluxe Room</a>
+                            <a id="dselc" href="./rooms/r-deluxe-seaview.html">Deluxe Sea View</a>
+                            <a id="dselc" href="./rooms/r-executive-suite.html">Executive Suite</a>
+                            <a id="dselc" href="./rooms/r-grand-suite.html">Grand Suite</a>
+                            <a id="dselc" href="./rooms/r-grand-deluxe.html">Grand Deluxe</a>
+                            <a id="dselc" href="./rooms/r-grand-deluxe-seaview.html">Grand Deluxe Sea View</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./s-service.html">SERVICES</a>
+                        <div id="dropdown-content" class="dropdown-content">
+                            <a id="dselc" href="./s-recreation.html">Recreation Facilities</a>
+                            <a id="dselc" href="./s-meeting-table.html">Meetings and Events</a>
+                        </div>
+                    </li>
+                    <li><a href="./g-gallery.html">GALLERY</a></li>                    
+                    <li>
+                        <a href="./b-bars.html">BARS</a>
+                        <div id="dropdown-content" class="dropdown-content">
+                            <a id="dselc" href="#">WatuAdem Bars</a>
+                            <a id="dselc" href="#">IndahSari Club</a>
+                            <a id="dselc" href="#">BulanMadu Restaurant</a>
+                            <a id="dselc" href="#">SambelanCok Restaurant</a>
+                        </div>
+                    </li>
+                    <li><a href="./m-maps.html">MAP</a></li>
+                </ul>
+                <div class="menuToggle" onclick="toggleMenu()"></div>
+                <div class="mini-dropdown">
+                    <a href="../index.html">HOTEL</a>
+                    <a href="./o-offers.html">OFFERS</a>
+                    <a href="./r-room.html">ROOMS</a>
+                    <a href="./s-service.html">SERVICES</a>
+                    <a href="./g-gallery.html">GALLERY</a>
+                    <a href="./b-bars.html">BARS</a>
+                    <a href="./m-maps.html">MAP</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-image-container">
+        <img src="../img/grand-deluxe.jpg" alt="">
+    </div>
+
+    <div class="content-container">
+        <div class="wrapper1">
+            <div class="main-content">
+                <div class="content-title">
+                    <h1>ROOMS</h1><br><br>
+                    <p>
+                        There are several rooms that the hotel provide, starts from 300元
+                    </p>
+                </div><br>
+                <hr>
+                <div class="flexer"><h4 id="title-currency">Select Currency</h4></div>
+                <form class="change-currency">                    
+                    <input id="bitcoin" name="currency" type="radio">
+                    <label for="bitcoin">&#8383</label>
+                    <input id="yuan" name="currency" type="radio">
+                    <label for="yuan">元</label>
+                    <input id="yen" name="currency" type="radio">
+                    <label for="yen">¥</label>
+                    <input id="idr" name="currency" type="radio">
+                    <label for="idr">IDR</label>
+                </form><br>
+                <hr>
+                <div class="rooms">
+                    <div class="room deluxe" id="room-d1">
+                        <img src="../img/deluxe-room.jpg" alt="">
+                        <div class="room-desc1">
+                            <h3>Deluxe Room</h3>
+                            <p>
+                                Located on the ground and upper floor of the Greenwood Wing, this room features a spacious bedroom with complimentary coffee and tea maker as well as a simple modern wooden closet that offers a contemporary atmosphere. Interconnecting rooms are available on special request.
+                            </p><br>
+                            <div class="price">
+                                <h4>300元</h4>
+                                <a href="./rooms/r-deluxe-room.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="room deluxe-seaview">                        
+                        <div class="room-desc2">
+                            <h3>Deluxe Sea View</h3>
+                            <p>
+                                Decorated in contemporary manner at upper part of the building with a choice of twin or double bed, this room features a spectacular view of the Alissa Beach with a spacious bedroom which is combined with comfort and bliss.
+                            </p><br>
+                            <div class="price">
+                                <h4>400元</h4>
+                                <a href="./rooms/r-deluxe-seaview.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                        <img src="../img/deluxe-seave.jpg" alt="">
+                    </div>
+                    <hr>
+                    <div class="room excutive-suite">
+                        <img src="../img/executive-suite.jpg" alt="">
+                        <div class="room-desc1">
+                            <h3>Executive Suite</h3>
+                            <p>
+                                The Executive Suite is a stylish one-bedroom suite with a king-sized bed with a spacious bedroom. The room features one space of seating area with a walk-in closet and the parquet floor in the room reflects a modern and warm atmosphere with various choices of views from the 22 square meter balcony, being it pool or sea views.
+                            </p><br>
+                            <div class="price">
+                                <h4>700元</h4>
+                                <a href="./rooms/r-executive-suite.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="room grand-suite">                        
+                        <div class="room-desc2">
+                            <h3>Grand Suite</h3>
+                            <p>
+                                For the highest performance and comfort for your stay, why don’t indulge yourself in our Suite Room? Spacious bedroom and living room, large bathroom with Nature view, the parquet floor in the room reflect a modern and warm atmosphere. The suites can be converted to a Family Suite as each suite has an interconnecting with Deluxe Twin Room with a private entrance. Located right above the hotel entrance which offers easy access to Lobby and Restaurant.
+                            </p><br>
+                            <div class="price">
+                                <h4>1000元</h4>
+                                <a href="./rooms/r-grand-suite.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                        <img src="../img/grand-suite.jpg" alt="">
+                    </div>
+                    <hr>
+                    <div class="room grand-deluxe">
+                        <img src="../img/grand-deluxe.jpg" alt="">
+                        <div class="room-desc1">
+                            <h3>Grand Deluxe</h3>
+                            <p>
+                                Located at the original building. After rejuvenation, the room transforms into a fresher space that features modern looks which creates an uplifting ambiance with a direct view of a tranquil garden and pool.
+                            </p><br>
+                            <div class="price">
+                                <h4>800元</h4>
+                                <a href="./rooms/r-grand-deluxe.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="room grand-deluxe-seaview">                        
+                        <div class="room-desc2">
+                            <h3>Grand Deluxe Sea View</h3>
+                            <p>
+                                Located on the ground floor of Seaside Wing, the new room type begs to differ as it is decorated in modern looks with rejuvenated facilities and amenities. An easy access from its private balcony simply makes it the best choice for your family vacation.
+                            </p><br>
+                            <div class="price">
+                                <h4>1500元</h4>
+                                <a href="./rooms/r-grand-deluxe-seaview.html"><button>VIEW MORE!</button></a>
+                            </div>
+                        </div>
+                        <img src="../img/grand-deluxe-seav.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <hr>
+            <div class="wrapper1">
+                <div class="footer1-items">
+                    <div class="social-media-container">
+                        <h5>CONNECT WITH US</h5>
+                        <p>We like to share new offers and exclusive promotions</p>
+                        <ul class="scm-container">
+                            <a class="sm" href="https://github.com/mfimahendra"><img  src="../img/sm-github.svg" alt=""></a>
+                            <a class="sm" href="https://u.wechat.com/IDn1hZBdaw3QjC2LHyPR0eg"><img  src="../img/sm-wechat.svg" alt=""></a>
+                            <a class="sm" href="https://twitter.com/mfimahendra"><img  src="../img/sm-twitter.svg" alt=""></a>
+                            <a class="sm" href="https://www.instagram.com/mfimahendra_/"><img  src="../img/sm-instagram.svg" alt=""></a>
+                        </ul>
+                    </div>
+                    <div class="news-container">
+                        <h3>Läleony</h3>
+                        <p style="font-size: 0.5em; margin-top: -3%;">Premium+</p>
+                        <p>Get notified about the Promotions by Email</p>
+                        <form id="email-form" action="#">
+                            <input id="type-email" type="email" placeholder="Input Your Email">
+                            <input id="submit-email" type="submit" value="SUBSCRIBE!">
+                        </form>
+                    </div>
+                </div>
+            </div><br><hr>
+            <div class="footer-container">
+                <div class="ft-title">
+                    <div class="ft-logo">
+                        <img src="../img/logo-head.svg" alt="">
+                    </div>
+                </div>
+                <div class="ft-info">
+                    <h4>Läleony Hotel and Resort</h4>
+                    <p>
+                        Alissa Beach No 22, Pochinki - Indonesia <br><br>
+                        Phone : +62 123 4567 8910  <br>
+                        E-mail : mfimahendra@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="wrapper">
+                <div class="flexer">
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2021 Läleony Hotel & Resort. All rights reserved, Pictures By Pexels.com . <br> Designed By Mukhammad Fakhrizal Ihza - CST - 201953082034                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
