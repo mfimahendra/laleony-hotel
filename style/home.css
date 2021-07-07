@@ -1,7 +1,8 @@
 .bg-photo img{
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 768px;
+    object-fit:cover ;
     top: 0%;
     margin-top: 0%;
     z-index: -10;
@@ -241,15 +242,13 @@
     margin-top: -3%;
     width: 290px;
     height: 410px;
-    /* background-color: var(--clr-dark); */
-    /* background-image: url(../img/bay-origin.jpg);
-    background-size: cover; */
+    background-size: cover;
 }
 .tb-filter{
     position: absolute;
     width: 290px;
     height: 410px;
-    background-image: url(../img/bay-origin.jpg);
+    background-image: url(../img/pool-seaside.jpg);
     background-size: cover;
     filter: saturate(10%) brightness(50%);
     z-index: -10;

@@ -1,6 +1,7 @@
 :root{
     --clr-dark: #333333;
     --clr-semidark:#595959;
+    --clr-lightB: #ffffff;
     --clr-light: #f3f3f3;
     --clr-semilight: #b3b3b3;
     --clr-mainY:#DBBD5C;
@@ -10,6 +11,10 @@
 
     --font-serif:'Lora', serif;
     --font-sans-serif:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 * {
@@ -54,6 +59,14 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+.flexer1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 
 nav {
     display: flex;
@@ -101,6 +114,7 @@ nav ul{
 
 /* dropdown */
 .dropdown-content {
+    margin-top: -0.3%;
     display: none;
     position: absolute;
     background-color: var(--clr-dark);
@@ -160,8 +174,9 @@ nav ul{
     right: 0;
     bottom: 0;
     margin-top: 3%;
-    background-color: var(--clr-light);
-    height: 200px;
+    padding-top: 2%;
+    background-color: var(--clr-brightlight);
+    height: 230px;
 }
 
 .ft-info h4{
@@ -192,6 +207,7 @@ nav ul{
     height: 26px;
     border: none;
     opacity: 0.7;
+    transition: 300ms ease-in-out;
 }
 #submit-email:hover{
     background-color: var(--clr-mainYtp);

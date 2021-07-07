@@ -1,0 +1,158 @@
+.header-image-container img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    margin-top: 0%;
+    z-index: -10;
+}
+
+.content-container {
+    margin-top: 30%;
+    background-color: var(--clr-lightB);
+    color: var(--clr-dark);
+}
+
+.main-content h1 {
+    position:absolute;
+    background-color: var(--clr-lightB);
+    font-family: var(--font-serif);
+    color: var(--clr-mainY);
+    margin-top: -2%;
+    width: 20%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+}
+
+.main-content p{
+    font-size: 1rem;
+    text-align: justify;
+    text-align-last: center ;
+}
+
+#title-currency{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+}
+
+.change-currency{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.change-currency input{
+    margin-right: 1%;
+}
+.change-currency label{
+    font-family: var(--font-serif);
+    margin-right: 2%;
+}
+
+.rooms{
+    margin-top: 3%;
+}
+
+.room{
+    margin: 5% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room h3 {
+    color: var(--clr-dark);
+}
+
+.room img{
+    width: 400px;
+    height: 240px;
+    object-fit:fill;
+}
+
+.room-desc1{
+    margin-left: 5%;
+}
+.room-desc2{
+    margin-right: 5%;
+}
+
+.room-desc1 p,
+.room-desc2 p{
+    text-align-last: left ;
+}
+
+.room-desc1 li,
+.room-desc2 li{
+    margin: 4% 0%;
+    font-size: 0.9rem;
+}
+
+
+.price{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price h4{
+    font-size: 2rem;
+}
+
+.price button{
+    border: solid 1px var(--clr-mainY);
+    background-color: var(--clr-mainY);
+    color: var(--clr-dark);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 3% 7%;
+    transition:300ms ease-in-out;
+}
+
+.price button:hover{
+    border: solid 1px var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+/* ==================specific=========================== */
+
+.room-specific img{
+    width: 100%;
+}
+
+
+.main-content-specific h1 {
+    position:absolute;    
+    background-color: var(--clr-light);
+    font-family: var(--font-serif);
+    color: var(--clr-mainY);
+    margin-top: -2%;
+    margin-left: 9.5%;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+}
+
+.main-content-specific p{
+    font-size: 1rem;
+    text-align: justify;
+    text-align-last: center ;
+}
+
+.room-size-bed {
+    margin: 1% 0%;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.room-features {
+    margin: 2% 0% ;
+}
+.room-features li{
+    font-size: 1rem;
+}

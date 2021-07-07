@@ -1,0 +1,169 @@
+.header-image-container img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -140px;
+    margin-top: 0%;
+    z-index: -10;
+}
+
+.content-container {
+    margin-top: 30%;
+    padding-bottom: 3%;
+    background-color: var(--clr-light);
+}
+
+.main-content h1 {
+    position:absolute;
+    background-color: var(--clr-light);
+    font-family: var(--font-serif);
+    color: var(--clr-mainY);
+    margin-top: -2%;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.main-content p{
+    font-size: 1rem;
+    text-align: justify;
+    text-align-last: center ;
+}
+
+.service-title h3{
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service-title p{
+    margin-top: 2%;   
+}
+
+.service-title th,td {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.service-img{
+    margin-top: 5%;
+}
+
+.service-img img{
+    width: 240px;
+    height: 400px;
+    object-fit: cover;
+}
+.service-img2{
+    margin-top: 5%;
+}
+
+.service-img2 img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0.5%;
+}
+
+.book-now-service{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.book-now-service button:hover{
+    border: solid 1px var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.book-now-service button{
+    border: solid 1px var(--clr-mainY);
+    background-color: var(--clr-mainY);
+    color: var(--clr-dark);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 3% 7%;
+    transition:150ms ease-in-out;
+}
+
+.service-desc1,
+.service-desc2{
+    margin-top: 3%;
+    color: var(--clr-dark);
+}
+
+
+/* meeting-rooms */
+
+.table-container {
+    justify-content: center;
+    display: flex;
+}
+
+#meetings-rooms {
+    text-align: center;
+    border-collapse: collapse;
+    font-family: var(--font-serif);
+}
+
+#meetings-rooms th{
+    font-weight: 400;
+    border: solid 1px;
+    font-size: 1rem;
+    padding: 0px 50px;
+}
+
+#meetings-rooms td{
+    border: solid 1px;
+    font-size: 1.3rem;
+    padding: 0px 0px;
+}
+
+#meetings-rooms tr img{
+    width: 370px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-image-container{
+    color: var(--clr-dark);
+}
+
+.g-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.g-column {
+    flex: 40%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+  
+.g-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .g-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .g-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
