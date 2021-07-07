@@ -85,14 +85,93 @@ function showSlides(n) {
 }
 
 
-//currency auto
-let currency = ['0.0029 &#8383', '670 元', '11500 ¥', '1.499.990 IDR'];
-let currentIndex = 0;
-let uang = document.querySelector('#currency');
+//price
 
-setInterval(() => {
-    uang.innerHTML= currency[currentIndex];  
-    currentIndex++;
-    if (currentIndex === 4)
-    currentIndex = 0;
-}, 3000)
+function bPrice() {
+    const roomImage = document.querySelector("#bRoomImage").src = "../img/main-building.png";
+    const type = document.querySelector("#b-rooms").value;
+    switch (type) {
+        case 'Deluxe':            
+            document.querySelector("#showHarga").value = "300元";
+            document.querySelector("#bRoomImage").src = "../img/deluxe-room.jpg";
+            break;
+        case 'Deluxe Sea View':            
+            document.querySelector("#showHarga").value = "400元";
+            document.querySelector("#bRoomImage").src = "../img/deluxe-seave.jpg";
+            break;
+        case 'Executive Suite':            
+            document.querySelector("#showHarga").value = "700元";
+            document.querySelector("#bRoomImage").src = "../img/executive-suite.jpg";
+            break;
+        case 'Grand Suite':            
+            document.querySelector("#showHarga").value = "1000元";
+            document.querySelector("#bRoomImage").src = "../img/grand-suite.jpg";
+            break;
+        case 'Grand Deluxe':            
+            document.querySelector("#showHarga").value = "800元";
+            document.querySelector("#bRoomImage").src = "../img/grand-deluxe.jpg";
+            break;
+        case 'Grand Deluxe Sea View':            
+            document.querySelector("#showHarga").value = "1500元";
+            document.querySelector("#bRoomImage").src = "../img/grand-deluxe-seav.jpg";
+            break;
+
+        default:
+            document.querySelector("#showHarga").value = "0元";
+            break;
+        }
+}
+
+function submitt() { 
+    var fN = document.getElementById("fName").value;
+    var lN = document.getElementById("lName").value;
+    var bRm = document.getElementById("b-rooms").value;
+    var cinDate = document.getElementById("check-in").value;
+    var hargakamar = document.getElementById("showHarga").value;
+
+    if (confirm("Hello Mr/Mrs " + fN + " "+ lN + " You will book a room on " + cinDate + " , " + bRm  + " room type for : " + hargakamar)) {
+        alert("Successfully Book a Room");
+    }
+    else {
+        alert("Aborted");
+    }
+    
+}
+
+//booking offers
+function bookOffers(offer) {
+    switch (offer) {
+        case 'wedding':
+            if (confirm("Book a Wedding package? for 5000元")) {
+                alert("You book a Wedding Package, for further information call +62 123 4567 8910");
+            }
+            break;
+
+        case 'honeymoon':
+            if (confirm("Book a Honeymoon package? for 3500元")) {
+                alert("You book a Honeymoon Package, for further information call +62 123 4567 8910");
+            }
+            break;
+
+        case 'pool':
+            if (confirm("Book a Pool & Bars package? for 4000元")) {
+                alert("You book a Pool & Bars Package, for further information call +62 123 4567 8910");
+            }
+            break;
+    
+        case 'holiday':
+            if (confirm("Book a Holiday package? for 2500元")) {
+                alert("You book a Holiday Package, for further information call +62 123 4567 8910");
+            }
+            break;
+
+        case 'roomHalf':
+            if (confirm("Book a Room package for half price?")) {
+                alert("You book a Room Package, for further information call +62 123 4567 8910");
+            }
+            break;
+    
+        default:
+            break;
+    }
+}
